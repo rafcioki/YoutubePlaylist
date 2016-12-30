@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Youtubing.RestAPI", "Youtubing.RestAPI\Youtubing.RestAPI.csproj", "{B2A14540-79EC-453C-B02C-6CFEB10B221F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Youtubing.ViewModels", "Youtubing.ViewModels\Youtubing.ViewModels.csproj", "{BA10BAD2-D515-4242-8432-EB92CFE5355A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Youtubing.RestAPI.Services", "Youtubing.RestAPI.Services\Youtubing.RestAPI.Services.csproj", "{EA1F4B00-3400-47E2-8603-685AB157B5D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Youtubing.DataAccess", "Youtubing.DataAccess\Youtubing.DataAccess.csproj", "{E51EE5EF-C46A-4354-B2B4-B4C34914F309}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CDFDB8E9-7908-4884-B7B2-8B0DCFB54E52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Youtubing.RestAPI.Services.Tests", "Youtubing.RestAPI.Services.Tests\Youtubing.RestAPI.Services.Tests.csproj", "{E6DC0740-BD80-405C-A9B9-CCCE32FB99A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Youtubing.Core", "Youtubing.Core\Youtubing.Core.csproj", "{BF78320F-91EC-4C8E-AAA3-957A98542849}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2A14540-79EC-453C-B02C-6CFEB10B221F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A14540-79EC-453C-B02C-6CFEB10B221F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A14540-79EC-453C-B02C-6CFEB10B221F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A14540-79EC-453C-B02C-6CFEB10B221F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA10BAD2-D515-4242-8432-EB92CFE5355A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA10BAD2-D515-4242-8432-EB92CFE5355A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA10BAD2-D515-4242-8432-EB92CFE5355A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA10BAD2-D515-4242-8432-EB92CFE5355A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA1F4B00-3400-47E2-8603-685AB157B5D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1F4B00-3400-47E2-8603-685AB157B5D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1F4B00-3400-47E2-8603-685AB157B5D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1F4B00-3400-47E2-8603-685AB157B5D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E51EE5EF-C46A-4354-B2B4-B4C34914F309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E51EE5EF-C46A-4354-B2B4-B4C34914F309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E51EE5EF-C46A-4354-B2B4-B4C34914F309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E51EE5EF-C46A-4354-B2B4-B4C34914F309}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6DC0740-BD80-405C-A9B9-CCCE32FB99A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6DC0740-BD80-405C-A9B9-CCCE32FB99A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6DC0740-BD80-405C-A9B9-CCCE32FB99A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6DC0740-BD80-405C-A9B9-CCCE32FB99A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF78320F-91EC-4C8E-AAA3-957A98542849}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF78320F-91EC-4C8E-AAA3-957A98542849}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF78320F-91EC-4C8E-AAA3-957A98542849}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF78320F-91EC-4C8E-AAA3-957A98542849}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E6DC0740-BD80-405C-A9B9-CCCE32FB99A4} = {CDFDB8E9-7908-4884-B7B2-8B0DCFB54E52}
+	EndGlobalSection
+EndGlobal
