@@ -1,4 +1,5 @@
 ﻿using System.Web.Http;
+using System.Web.Http.Cors;
 using Microsoft.Owin.Security.OAuth;
 
 namespace Youtubing.RestAPI
@@ -7,6 +8,8 @@ namespace Youtubing.RestAPI
     {
         public static void Register(HttpConfiguration config)
         {
+			config.EnableCors(new EnableCorsAttribute("*", "*", "*"));
+
             // Web API configuration and services
             // Configure Web API to use only bearer token authentication.
             config.SuppressDefaultHostAuthentication();

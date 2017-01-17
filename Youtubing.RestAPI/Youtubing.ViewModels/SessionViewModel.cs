@@ -1,6 +1,6 @@
 ﻿namespace Youtubing.ViewModels
 {
-    public class Session
+    public class SessionViewModel
     {
 		public string Id { get; set; }
     }

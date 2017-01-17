@@ -41,7 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\AlreadyExistsException.cs" />
+    <Compile Include="Exceptions\SessionNotFoundException.cs" />
     <Compile Include="Models\Session.cs" />
+    <Compile Include="Models\Video.cs" />
     <Compile Include="Repositories\ISessionRepository.cs" />
     <Compile Include="SessionService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

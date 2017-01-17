@@ -1,7 +1,7 @@
 ﻿using Moq;
 using NUnit.Framework;
 using Youtubing.Core;
-using Youtubing.DataAccess.Exceptions;
+using Youtubing.RestAPI.Services.Exceptions;
 using Youtubing.RestAPI.Services.Repositories;
 
 namespace Youtubing.RestAPI.Services.Tests

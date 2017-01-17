@@ -7,9 +7,10 @@ namespace Youtubing.DataAccess
     {
 	    public YoutubingDataContext() : base("YoutubingDataContext")
 	    {
-		    Database.SetInitializer(new CreateDatabaseIfNotExists<YoutubingDataContext>());
+		    Configuration.LazyLoadingEnabled = true;
+		    Database.SetInitializer(new DropCreateDatabaseIfModelChanges<YoutubingDataContext>());
 	    }
-
+			 
 		public DbSet<Session> Sessions { get; set; }
 
 	    public static YoutubingDataContext Create()
