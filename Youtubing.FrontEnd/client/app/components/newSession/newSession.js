@@ -11,7 +11,7 @@ let newSessionModule = angular.module('newSession', [
 
   $stateProvider
     .state('newSession', {
-      url: '/newSession',
+      url: '/',
       component: 'newSession'
     });
 })

@@ -1,6 +1,5 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
-import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
 import SessionService from './services/sessionService';
@@ -10,7 +9,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 angular.module('youtubing-app', [
     uiRouter,
-    Common,
     Components
   ])
   .config(($locationProvider) => {
