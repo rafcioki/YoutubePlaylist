@@ -3,6 +3,7 @@ import uiRouter from 'angular-ui-router';
 import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
+import SessionService from './services/sessionService';
 import 'normalize.css';
 
 angular.module('youtubing-app', [
@@ -17,4 +18,5 @@ angular.module('youtubing-app', [
     $locationProvider.html5Mode(true).hashPrefix('!');
   })
 
-  .component('app', AppComponent);
+  .component('app', AppComponent)
+  .factory('SessionService', SessionService);

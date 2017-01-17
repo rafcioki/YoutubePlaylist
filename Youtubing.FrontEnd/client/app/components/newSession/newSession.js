@@ -6,6 +6,16 @@ let newSessionModule = angular.module('newSession', [
   uiRouter
 ])
 
+.config(($stateProvider) => {
+  "ngInject";
+
+  $stateProvider
+    .state('newSession', {
+      url: '/newSession',
+      component: 'newSession'
+    });
+})
+
 .component('newSession', newSessionComponent)
 
 .name;
