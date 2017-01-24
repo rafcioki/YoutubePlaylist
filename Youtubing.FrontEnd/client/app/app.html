@@ -1,4 +1,14 @@
-<!-- Place all UI elements intended to be present across all routes in this file -->
-<div class="app">
+<div class="app container">
+  <div class="header">
+    <login-box class="log-in-box"></login-box>
+    <h3 class="app-name-header text-muted">{{ $ctrl.appName }}</h3>
+  </div>
+
   <div ui-view></div>
+
+  <footer class="navbar-fixed-bottom sticky-footer">
+    <div class="container footer-content">
+      <a ng-href="{{ $ctrl.githubUrl }}">{{ $ctrl.githubUrl }}</a>
+    </div>
+  </footer>
 </div>
