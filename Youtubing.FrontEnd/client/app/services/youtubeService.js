@@ -1,3 +1,5 @@
+import getVideoId from 'get-video-id';
+
 const YoutubeService = ($http, AppSettings) => {
     "ngInject";
     let getVideoDetails = (videoId) => {
@@ -10,6 +12,10 @@ const YoutubeService = ($http, AppSettings) => {
         }).then(data => {
             return _extractDetailsFromVideo(data);
         });
+    };
+
+    let extractVideoId = (videoUrl) => {
+        return getVideoId(videoUrl);
     };
 
     let _extractDetailsFromVideo = (data) => {
@@ -25,7 +31,7 @@ const YoutubeService = ($http, AppSettings) => {
         };
     };
 
-    return { getVideoDetails };
+    return { getVideoDetails, extractVideoId };
 };
 
 export default YoutubeService;

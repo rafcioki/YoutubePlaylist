@@ -41,7 +41,9 @@ class VideosController {
 
   _loadVideoDetailsFromYoutube(videos) {
     return Promise.all(videos.map(video => {
-        return this.YoutubeService.getVideoDetails('KhSLlnHkE10')
+        var videoId = this.YoutubeService.extractVideoId(video.Url).id;
+        console.log(videoId);
+        return this.YoutubeService.getVideoDetails(videoId)
           .then(function(videoDetails){
             return {
               url: video.Url,
