@@ -1,9 +1,10 @@
 class VideosController {
-  constructor($stateParams, SessionService) {
+  constructor($stateParams, SessionService, YoutubeService) {
     "ngInject";
 
     this.name = 'videos';
     this.SessionService = SessionService;
+    this.YoutubeService = YoutubeService;
 
     this.sessionId = $stateParams.sessionId;
 
@@ -11,28 +12,43 @@ class VideosController {
   }
 
   $onInit() {
-      this._loadVideos();
+      this._loadSessionVideos();
   }
 
   _addNewVideo(video) {
     this.SessionService.addVideoToSession(this.sessionId, video.url)
       .then(function(data) {
-        this._loadVideos();
+        this._loadSessionVideos();
       }.bind(this))
       .catch(function(ex) {
-        console.log('something went wrong');
+        console.log(ex);
       });
   }
 
-  _loadVideos() {
+  _loadSessionVideos() {
       this.SessionService.getSessionVideos(this.sessionId)
         .then(function(data) {
-          this.videos = data.data;
-        }
-        .bind(this))
+          return this._loadVideoDetailsFromYoutube(data.data);
+        }.bind(this))
+        .then(function(videosWithDetails) {
+          console.log(videosWithDetails);
+          this.videos = videosWithDetails;
+        }.bind(this))
         .catch(function(ex) {
-          console.log("Something went wrong");
+          console.log(ex);
         });
+  }
+
+  _loadVideoDetailsFromYoutube(videos) {
+    return Promise.all(videos.map(video => {
+        return this.YoutubeService.getVideoDetails('KhSLlnHkE10')
+          .then(function(videoDetails){
+            return {
+              url: video.Url,
+              details: videoDetails
+            };
+          });
+    }));
   }
 }
 

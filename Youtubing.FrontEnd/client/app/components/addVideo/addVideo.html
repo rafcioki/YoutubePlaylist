@@ -1,7 +1,6 @@
 <div>
-  <form data-ng-submit="$ctrl.addVideoCallback({video: video})">
-    <input type="text" placeholder="Enter URL" data-ng-model="video.url">
-    <input type="submit" value="Add video" >
+  <form data-ng-submit="$ctrl.addVideoCallback({video: video})" class="addNewVideoForm">
+    <input class="enterVideoUrlField" type="text" placeholder="Enter URL" data-ng-model="video.url">
+    <input type="submit" class="btn btn-primary" value="Add new video to queue" >
   </form>
-  <button type="button" class="btn btn-primary"> test</button>
 </div>

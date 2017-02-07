@@ -3,6 +3,7 @@ import uiRouter from 'angular-ui-router';
 import Components from './components/components';
 import AppComponent from './app.component';
 import SessionService from './services/sessionService';
+import YoutubeService from './services/youtubeService';
 import AppSettings from './appSettings';
 
 import 'normalize.css';
@@ -20,4 +21,5 @@ angular.module('youtubing-app', [
 
   .component('app', AppComponent)
   .factory('SessionService', SessionService)
+  .factory('YoutubeService', YoutubeService)
   .factory('AppSettings', AppSettings);

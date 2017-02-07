@@ -1,0 +1,11 @@
+<div>
+  <form data-ng-submit="$ctrl.logIn(user)" data-ng-if="!$ctrl.userLoggedIn">
+    <input type="text" placeholder="Enter your name" data-ng-model="user.name">
+    <button class="btn btn-primary" type="submit">Log in</button>
+  </form>
+
+  <div data-ng-if="$ctrl.userLoggedIn">
+    <span>Welcome {{ $ctrl.userName }}!</span>
+    <button class="btn btn-primary" data-ng-click="$ctrl.logOut()">Log out</button>
+  </div>
+</div>
